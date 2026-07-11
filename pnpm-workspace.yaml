@@ -1,0 +1,11 @@
+packages: []
+allowBuilds:
+  "@prisma/engines": true
+  esbuild: true
+  prisma: true
+  unrs-resolver: true
+onlyBuiltDependencies:
+  - "@prisma/engines"
+  - esbuild
+  - prisma
+  - unrs-resolver
