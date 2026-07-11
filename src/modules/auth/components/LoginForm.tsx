@@ -28,7 +28,7 @@ export default function LoginForm() {
     }
 
     const callbackUrl = (router.query.callbackUrl as string) || "/admin";
-    router.push(callbackUrl);
+    window.location.href = callbackUrl;
   };
 
   return (
