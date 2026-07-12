@@ -169,6 +169,17 @@ model AuditLog {
   @@index([createdAt])
 }
 
+model ContactMessage {
+  id        String   @id @default(cuid())
+  name      String
+  email     String
+  phone     String?
+  service   String?
+  message   String
+  read      Boolean  @default(false)
+  createdAt DateTime @default(now())
+}
+
 enum UserRole {
   ADMIN
   TECHNICIAN
